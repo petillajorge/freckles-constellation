@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export default function LandingPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="relative min-h-screen bg-transparent text-black overflow-hidden flex flex-col items-center justify-center text-center px-6">
       {/* Header */}
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
@@ -36,7 +36,7 @@ export default function LandingPage() {
         </div>
       </header>
 
-      <main className="flex-1">
+      <main className="flex-1 ">
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-orange-50 to-white">
           <div className="container px-4 md:px-6">
@@ -60,9 +60,9 @@ export default function LandingPage() {
                 <div className="relative w-full max-w-sm overflow-hidden rounded-xl border bg-background shadow-xl">
                   <div className="p-6">
                     <Image
-                      src="/placeholder.svg?height=400&width=400"
-                      width={400}
-                      height={400}
+                      src="/freckles-constellation-logo.png"
+                      width={800}
+                      height={800}
                       alt="Freckles matching example"
                       className="rounded-lg object-cover"
                     />
@@ -163,7 +163,7 @@ export default function LandingPage() {
                       </div>
                       <div className="overflow-hidden rounded-lg border">
                         <Image
-                          src="/placeholder.svg?height=300&width=300"
+                          src="/logo-notext.png"
                           width={300}
                           height={300}
                           alt="Your photo"
@@ -177,7 +177,7 @@ export default function LandingPage() {
                       </div>
                       <div className="overflow-hidden rounded-lg border">
                         <Image
-                          src="/placeholder.svg?height=300&width=300"
+                          src="/logo-notext.png"
                           width={300}
                           height={300}
                           alt="Matching photo"
@@ -216,9 +216,9 @@ export default function LandingPage() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <Image
-                src="/placeholder.svg?height=400&width=400"
-                width={400}
-                height={400}
+                src="/logo-notext.png"
+                width={300}
+                height={300}
                 alt="Features illustration"
                 className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center sm:w-full"
               />
@@ -302,11 +302,19 @@ export default function LandingPage() {
                 </div>
                 <div className="mt-4 flex items-center gap-4">
                   <div className="rounded-full bg-orange-100 p-1">
-                    <div className="h-10 w-10 rounded-full bg-orange-200" />
+                    <div className="h-10 w-10 rounded-full bg-orange-200" >
+                    <Image 
+                      src="/media/sophie.jpg"
+                      width={200}
+                      height={200}
+                      alt="Sophie"
+                      className="h-10 w-10 rounded-full"/>
+                    </div>
+
                   </div>
                   <div>
-                    <p className="font-medium text-orange-900">Emma Johnson</p>
-                    <p className="text-sm text-gray-600">New York, USA</p>
+                    <p className="font-medium text-orange-900">Sophie P.</p>
+                    <p className="text-sm text-gray-600">Akimovka, Ukraine</p>
                   </div>
                 </div>
               </div>
@@ -326,11 +334,18 @@ export default function LandingPage() {
                 </div>
                 <div className="mt-4 flex items-center gap-4">
                   <div className="rounded-full bg-orange-100 p-1">
-                    <div className="h-10 w-10 rounded-full bg-orange-200" />
+                  <div className="h-10 w-10 rounded-full bg-orange-200" >
+                    <Image 
+                      src="/media/jorge.png"
+                      width={200}
+                      height={200}
+                      alt="Jorge"
+                      className="h-10 w-10 rounded-full"/>
+                    </div>
                   </div>
                   <div>
-                    <p className="font-medium text-orange-900">Michael Chen</p>
-                    <p className="text-sm text-gray-600">Toronto, Canada</p>
+                    <p className="font-medium text-orange-900">Jorge F.</p>
+                    <p className="text-sm text-gray-600">Valencia, Spain</p>
                   </div>
                 </div>
               </div>
@@ -344,17 +359,23 @@ export default function LandingPage() {
                     <Star className="h-5 w-5 fill-current" />
                   </div>
                   <p className="text-gray-600">
-                    "The personalized story about my freckle constellation was so accurate it gave me chills. My match
-                    and I discovered we have so many things in common beyond just our freckles!"
+                    "Tali, tali, Tutu"
                   </p>
                 </div>
                 <div className="mt-4 flex items-center gap-4">
                   <div className="rounded-full bg-orange-100 p-1">
-                    <div className="h-10 w-10 rounded-full bg-orange-200" />
+                  <div className="h-10 w-10 rounded-full bg-orange-200" >
+                    <Image 
+                      src="/media/tutu.jpg"
+                      width={200}
+                      height={200}
+                      alt="Jorge"
+                      className="h-10 w-10 rounded-full"/>
+                    </div>
                   </div>
                   <div>
-                    <p className="font-medium text-orange-900">Sophia Martinez</p>
-                    <p className="text-sm text-gray-600">Barcelona, Spain</p>
+                    <p className="font-medium text-orange-900">Tutu</p>
+                    <p className="text-sm text-gray-600">Cat</p>
                   </div>
                 </div>
               </div>
