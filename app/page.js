@@ -36,22 +36,25 @@ export default function LandingPage() {
         </div>
       </header>
 
-      <main className="flex-1 ">
+      <main className="flex-1 flex-col flex ">
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-orange-50 to-white">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
               <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
+                <div className="space-y-2 justify-center align-middle flex-wrap">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-orange-900">
                     Discover Your Freckles Twin
                   </h1>
-                  <p className="max-w-[600px] text-gray-600 md:text-xl">
-                    Upload your photo and find someone with a matching freckle constellation. Your unique pattern
-                    connects you to others in ways you never imagined.
-                  </p>
+                  <div className="flex justify-center align-middle">
+                    <p className="max-w-[600px] text-gray-600 md:text-xl ">
+                      Upload your photo and find someone with a matching freckle constellation. Your unique pattern
+                      connects you to others in ways you never imagined.
+                    </p>
+                  </div>
+                  
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
                   <Button className="bg-orange-500 hover:bg-orange-600 text-white">Try It Now</Button>
                   <Button variant="outline">Learn More</Button>
                 </div>
@@ -73,56 +76,8 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* How It Works Section */}
-        <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-orange-100 px-3 py-1 text-sm text-orange-800">
-                  How It Works
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-orange-900">
-                  Find Your Freckle Match in 3 Simple Steps
-                </h2>
-                <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Our advanced algorithm maps your unique freckle pattern and finds your celestial twin.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3">
-              <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-orange-900">
-                  <Upload className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold text-orange-900">Upload Your Photo</h3>
-                <p className="text-center text-gray-600">
-                  Take a clear selfie or upload an existing photo showing your freckles.
-                </p>
-              </div>
-              <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-orange-900">
-                  <Sparkles className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold text-orange-900">Map Your Constellation</h3>
-                <p className="text-center text-gray-600">
-                  Our algorithm detects and maps your unique freckle pattern into a constellation.
-                </p>
-              </div>
-              <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-orange-900">
-                  <Users className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold text-orange-900">Find Your Match</h3>
-                <p className="text-center text-gray-600">
-                  Discover people who share a similar freckle constellation to yours.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Demo Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-orange-50">
+{/* Demo Section */}
+<section className="w-full py-12 md:py-24 lg:py-32 bg-orange-50">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
@@ -194,6 +149,56 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+
+        {/* How It Works Section */}
+        <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-orange-100 px-4 py-1 text-sm text-orange-800">
+                  How It Works
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-orange-900">
+                  Find Your Freckle Match in 3 Simple Steps
+                </h2>
+                <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Our advanced algorithm maps your unique freckle pattern and finds your celestial twin.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3">
+              <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-orange-900">
+                  <Upload className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold text-orange-900">Upload Your Photo</h3>
+                <p className="text-center text-gray-600">
+                  Take a clear selfie or upload an existing photo showing your freckles.
+                </p>
+              </div>
+              <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-orange-900">
+                  <Sparkles className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold text-orange-900">Map Your Constellation</h3>
+                <p className="text-center text-gray-600">
+                  Our algorithm detects and maps your unique freckle pattern into a constellation.
+                </p>
+              </div>
+              <div className="flex flex-col items-center space-y-4 rounded-lg border p-6 shadow-sm">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-orange-900">
+                  <Users className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold text-orange-900">Find Your Match</h3>
+                <p className="text-center text-gray-600">
+                  Discover people who share a similar freckle constellation to yours.
+                </p>
               </div>
             </div>
           </div>
